@@ -1,0 +1,480 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+        <title>Giuseppe Santoro</title>
+        <style>
+            @media print {
+            	font-size: 10px;
+            	#resume {
+            		margin: 1em auto 1em auto;
+            		padding: 0 2em;
+            		max-width: 1100px;
+            	}
+            }
+            
+            body {
+            	background: #fff;
+            	font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
+            	line-height: 1.4;
+            	margin: 0 0;
+            	margin-bottom: 100px;
+            }
+            em {
+            	color: #999;
+            }
+            p {
+            	line-height: 1.6;
+            	font-size: 90%;
+            }
+            
+            a {
+            	color: #2C85B1;
+            	text-decoration: none;
+            	font-weight: 400;
+            }
+            ul {
+            	margin-bottom: 0;
+            }
+            section {
+            	margin: 1em 0 2em;
+            }
+            section:first-child {
+            	margin-top: 0;
+            }
+            section:last-child {
+            	margin-bottom: 0;
+            }
+            blockquote {
+            	margin: 0;
+            	margin-bottom: 1em;
+            }
+            #resume {
+            	margin: 2em auto 2em auto;
+            	padding: 0 2em;
+            	max-width: 700px;
+            }
+            
+            /* Resume heading */
+            .heading header {
+            
+            }
+            
+            .heading header h1 {
+            	font-size: 180%;
+            	margin: 0.5em 0;
+            	font-weight: 600;
+            }
+            
+            .heading header h2 {
+            	font-size: 140%;
+            	margin: 0;
+            	font-weight: 400;
+            }
+            
+            .heading header .contact .detail {
+            	margin: 0 1em 0 0;
+            }
+            
+            .profile {
+            	display: inline-block;
+            	margin: 0 1em 0 0;
+            }
+            
+            .profile strong,
+            .profile span {
+            	display: inline-block;
+            	margin: 0 1em 0 0;
+            }
+            /* section / line breaks */
+            section h2 {
+            	font-size: 140%;
+            	margin: 0 0 1em;
+            	text-transform: uppercase;
+            	color: #BC1B39;
+            	font-weight: 400;
+            }
+            
+            /* Experience items */
+            .item {
+            	margin: 0 0 1em;
+            	padding: 0 0 1em;
+            	/*border-bottom: 1px solid #F2EBEC;*/
+            }
+            
+            .item:last-child {
+            	border-bottom: none;
+            }
+            
+            
+            .item header h3 {
+            	margin: 0.2em 1em 0.2em 0;
+            	display: inline-block;
+            	font-weight: 600;
+            }
+            
+            .item header a {
+            	display: inline-block;
+            }
+            .item header h4 {
+            	margin: 0.15em 1em 0.35em 0;
+            }
+            .item .position {
+            	font-weight: 600;
+            	font-size: 100%;
+            	margin: 0.2em 1em 0.2em 0;
+            	color: #6B6B6B;
+            }
+            
+            .item .startDate,
+            .item .endDate {
+            	color: #6B6B6B;
+            }
+            
+            .item .highlights {
+            	list-style: square;
+            	text-align:justify;
+            	font-size: 90%;
+            }
+            
+            .item .summary {
+            	text-align:justify;
+            }
+            
+            /* skills */
+            #skills .item {
+            	margin: 0.5em 0;
+            	padding: 0 0 0.5em;
+            	font-size: 90%;
+            }
+            
+            #skills .item .name {
+            	font-weight: 600;
+            	display: inline-block;
+            	text-transform: uppercase;
+            	margin: 0 1em 0 0;
+            	width: 28%;
+            	vertical-align: top;
+            }
+            
+            #skills .item .keywords {
+            	display: inline-block;
+            	width: 65%;
+            	vertical-align: top;
+            }
+            
+            #skills .item .keywords .keyword {
+            	padding-bottom: 0.5em;
+            }
+            
+            /* education */
+            #education .item {
+            	/*display: inline-block;*/
+            	vertical-align: top;
+            	/*width: 49.5%;*/
+            	border-bottom: 0;
+            }
+            
+            /* education */
+            #languages .item {
+            	display: inline-block;
+            	vertical-align: top;
+            	width: 49.5%;
+            	border-bottom: 0;
+            }
+            
+            
+            /* education */
+            #nationality .item {
+            	display: inline-block;
+            	vertical-align: top;
+            	border-bottom: 0;
+            }
+            
+            .item .dates {
+            	float: right;
+            }
+            
+            @media print {
+            	body {
+            		font-size: 10pt;
+            		margin-bottom: 0;
+            	}
+            
+            	.nobreak {
+            		page-break-inside: avoid;
+            	}
+            
+            	#resume {
+            		margin-top: 0;
+            		margin-bottom: 0;
+            		padding-right: 0;
+            		padding-left: 0;
+            		max-width: 6.5in;
+            	}
+            
+            	.heading header h1 {
+            		margin-top: 0;
+            	}
+            
+            	@page {
+            		margin: 1in 1.5in;
+            	}
+            }
+        </style>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'
+        rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body>
+        <div id="resume">
+            <section class="heading nobreak">
+                <header>
+                    	<h1>Giuseppe Santoro</h1>
+
+                    <div class="contact">	<span class="detail">
+					<span><strong>Email</strong></span>
+	<a href="mailto:giuseppe.santoro@gmail.com">giuseppe.santoro@gmail.com</a>
+
+                        </span>	<span class="detail">
+					<span><strong>Website</strong></span>
+	<a href="https://gsantoro.github.io">https://gsantoro.github.io</a>
+
+                        </span>
+                    </div>
+                </header>
+                <div class="profile">	<strong class="network">
+					LinkedIn
+				</strong>
+	<span class="username">
+					<a href="https://www.linkedin.com/in/santorogiuseppe/">santorogiuseppe</a>
+				</span>
+
+                </div>
+                <div class="profile">	<strong class="network">
+					GitHub
+				</strong>
+	<span class="username">
+					<a href="http://github.com/gsantoro">gsantoro</a>
+				</span>
+
+                </div>
+                <div class="profile">	<strong class="network">
+					Twitter
+				</strong>
+	<span class="username">
+					<a href="https://twitter.com/g_santoro">gsantoro</a>
+				</span>
+
+                </div>
+            </section>
+            <section class="experience">
+                <!-- <div class="nobreak"> -->
+                	<h2>Experience</h2>
+
+                <section class="item">
+                    <header>
+                        	<h3 class="name">Skimlinks</h3>
+
+                    </header>	<span class="position">
+				Senior Software Engineer
+			</span>
+	<span class="dates">
+				<span class="startDate">
+					Mar 2017
+				</span>
+	<span class="endDate">
+					&ndash; Present
+				</span>
+</span>
+                    <div class="summary">
+                        <p>As part of a small data-platform team, I contributed to every stage of
+                            the development of the internal data pipeline in order to <strong>improve the experience of the publishers using our dashboard</strong> and
+                            at the same time to <strong>reduce cost for my company</strong>.</p>
+                    </div>
+                    <ul class="highlights">
+                        <li><strong>I reduced by 75% (from 8 to 2 hours) the running time of the daily pipeline</strong>,
+                            by replacing the legacy code with an <strong>Apache Beam</strong> job written
+                            in <strong>Java</strong> running on <strong>Google Dataflow</strong> for the
+                            ingestion of <strong>120 millions documents</strong> into <strong>ElasticSearch</strong> and
+                            by optimizing the parallelization of some Hive queries running on top of <strong>Apache Tez</strong>.</li>
+                        <li><strong>I reduced by 30% the infrastructure cost of my team</strong> by
+                            designing, deploying and configuring a new <strong>Kerberized Hadoop cluster</strong> with
+                            the same processing power of the legacy cluster.</li>
+                        <li>I contributed to the <strong>migration of the internal data pipeline</strong> from
+                            Hive/Hadoop to <strong>Google Big Query</strong> by writing a Google Dataflow
+                            job in Java for the data ingestion, by writing scripts in Python to automate
+                            the deployment of a <strong>Airflow</strong> cluster running on <strong>Kubernetes</strong> and
+                            by writing Airflow DAGs for the pipeline automation.</li>
+                        <li>I introduced new features into the data pipeline by writing Hive queries, <strong>Hive UDFs</strong> and <strong>Hive SerDes</strong> in
+                            Java.</li>
+                        <li>I contributed to the development of the <strong>RESTful API</strong> written
+                            in Python that was acting as proxy between ElasticSearch and the dashboard
+                            front-end.</li>
+                        <li>I wrote some <strong>Python</strong> scripts to collect and display statistics
+                            from the data pipeline into a <strong>Grafana</strong> dashboard backed by <strong>InfluxDB</strong>.</li>
+                        <li>I wrote some automation scripts in <strong>Python</strong> to deploy and
+                            maintain the Hadoop cluster.</li>
+                        <li>I provided <strong>internal training and support in Big Data</strong> to
+                            other Engineers in the company.</li>
+                    </ul>
+                </section>
+                <!-- -->
+                <!-- </div> -->
+                <!-- -->
+                <section class="item">
+                    <header>
+                        	<h3 class="name">Benevolent.AI</h3>
+
+                    </header>	<span class="position">
+				Big Data Engineer
+			</span>
+	<span class="dates">
+				<span class="startDate">
+					Jul 2015
+				</span>
+	<span class="endDate">
+					&ndash; Feb 2017
+				</span>
+</span>
+                    <div class="summary">
+                        <p>I <strong>contributed to the development and optimization of the internal data pipeline</strong>,
+                            which was processing scientific publications in order to infer new kind
+                            of relationships between chemical compounds and diseases.</p>
+                    </div>
+                    <ul class="highlights">
+                        <li>I <strong>reduced by ~8x (from 24 to 3 hours) the ingestion time of 40 millions documents</strong> into <strong>ElasticSearch</strong> by
+                            using a Spark job in Scala.</li>
+                        <li>I helped <strong>rewriting the pipeline</strong> from MapReduce jobs into
+                            a series of <strong>Spark</strong> jobs written in <strong>Scala</strong> running
+                            on <strong>Amazon EMR</strong>.</li>
+                        <li>I deployed and configured multiple <strong>Hadoop</strong>, <strong>ElasticSearch</strong> and <strong>Cassandra</strong> clusters
+                            by using <strong>Ansible</strong> and <strong>Python</strong> scripts both
+                            on premise and on the <strong>Amazon</strong> cloud.</li>
+                        <li>I wrote complex <strong>Apache Airflow</strong> DAGs to automate the Spark
+                            pipeline.</li>
+                        <li>I extensively used <strong>Docker</strong> containers both for local development
+                            and for production environments on <strong>Apache Mesos</strong> and <strong>Apache Marathon</strong>.</li>
+                        <li>I <strong>helped the data scientists</strong> productionize their <strong>Java</strong> code</li>
+                    </ul>
+                </section>
+                <!-- -->
+                <section class="item">
+                    <header>
+                        	<h3 class="name">Big Data Partnership</h3>
+
+                    </header>	<span class="position">
+				Senior Big Data Engineer
+			</span>
+	<span class="dates">
+				<span class="startDate">
+					Nov 2013
+				</span>
+	<span class="endDate">
+					&ndash; Jul 2015
+				</span>
+</span>
+                    <div class="summary">
+                        <p>I covered numerous roles including <strong>Big Data consultant, Hadoop trainer and Big Data Engineer</strong>.</p>
+                    </div>
+                    <ul class="highlights">
+                        <li>I worked as a <strong>Lead Engineer</strong> of a small team of engineers
+                            for a client on a 3 months project that involved developing a <strong>RESTful API</strong> for
+                            resizing images.</li>
+                        <li>I have successfully delivered multiple <strong>Hadoop training courses</strong> both
+                            on client sites and as part of the <strong>Hadoop Summit</strong> in partnership
+                            with <strong>Hortonworks</strong>.</li>
+                        <li>I have <strong>installed, configured and optimized proof of concepts Hadoop clusters</strong> for
+                            multiple clients.</li>
+                        <li>I contributed to the <strong>development of the internal data pipeline</strong> involving <strong>HBase</strong>, <strong>Apache Pig</strong> and <strong>Hadoop</strong>.</li>
+                    </ul>
+                </section>
+                <!-- -->
+                <section class="item">
+                    <header>
+                        	<h3 class="name">VisualDNA</h3>
+
+                    </header>	<span class="position">
+				Sotware Engineer
+			</span>
+	<span class="dates">
+				<span class="startDate">
+					Jan 2013
+				</span>
+	<span class="endDate">
+					&ndash; Oct 2013
+				</span>
+</span>
+                    <div class="summary">
+                        <p>As a back-end Engineer in the core team, I contributed to the development
+                            of APIs and web applications.</p>
+                    </div>
+                    <ul class="highlights">
+                        <li>I developed internal facing <strong>RESTful</strong> APIs in <strong>Java</strong>.</li>
+                        <li>I contributed to the front-end development of internal web applications
+                            in <strong>Javascript</strong>.</li>
+                        <li>I had exposure to <strong>Kafka</strong>, <strong>Hive</strong>, <strong>Pig</strong> and <strong>Zookeeper</strong>.</li>
+                    </ul>
+                </section>
+                <!-- -->
+            </section>
+            <section id="education">
+                <div class="nobreak">
+                    	<h2>Education</h2>
+
+                    <section class="item nobreak">
+                        <header>
+                            	<h3 class="name">University of Catania, Italy</h3>
+
+                        </header>	<span class="dates">
+				<span class="startDate">
+					Jan 2006
+				</span>
+	<span class="endDate">
+					&ndash; Jan 2012
+				</span>
+</span>
+                        <div class="qualification">	<span class="studyType">
+					Master&#x27;s degree
+				</span>
+	<span class="area">
+					&ndash; Software Engineering
+				</span>
+	<span class="gpa">
+					GPA: 4.0 (110/110 cum laude)
+				</span>
+
+                        </div>
+                    </section>
+                </div>
+                <section class="item nobreak">
+                    <header>
+                        	<h3 class="name">University of Palermo, Italy</h3>
+
+                    </header>	<span class="dates">
+				<span class="startDate">
+					Jan 2002
+				</span>
+	<span class="endDate">
+					&ndash; Jan 2006
+				</span>
+</span>
+                    <div class="qualification">	<span class="studyType">
+					Bachelor&#x27;s degree
+				</span>
+	<span class="area">
+					&ndash; Software Engineering
+				</span>
+	<span class="gpa">
+					GPA: 4.0 (110/110 cum laude)
+				</span>
+
+                    </div>
+                </section>
+            </section>
+        </div>
+    </body>
+
+</html>
