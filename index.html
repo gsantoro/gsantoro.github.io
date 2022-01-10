@@ -1,537 +1,369 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-        <title>Giuseppe Santoro</title>
-        <style>
-            @media print {
-            	font-size: 10px;
-            	#resume {
-            		margin: 1em auto 1em auto;
-            		padding: 0 2em;
-            		max-width: 1100px;
-            	}
-            }
-            
-            body {
-            	background: #fff;
-            	font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
-            	line-height: 1.4;
-            	margin: 0 0;
-            	margin-bottom: 100px;
-            }
-            em {
-            	color: #999;
-            }
-            p {
-            	line-height: 1.6;
-            	font-size: 90%;
-            }
-            
-            a {
-            	color: #2C85B1;
-            	text-decoration: none;
-            	font-weight: 400;
-            }
-            ul {
-            	margin-bottom: 0;
-            }
-            section {
-            	margin: 1em 0 2em;
-            }
-            section:first-child {
-            	margin-top: 0;
-            }
-            section:last-child {
-            	margin-bottom: 0;
-            }
-            blockquote {
-            	margin: 0;
-            	margin-bottom: 1em;
-            }
-            #resume {
-            	margin: 2em auto 2em auto;
-            	padding: 0 2em;
-            	max-width: 700px;
-            }
-            
-            /* Resume heading */
-            .heading header {
-            
-            }
-            
-            .heading header h1 {
-            	font-size: 180%;
-            	margin: 0.5em 0;
-            	font-weight: 600;
-            }
-            
-            .heading header h2 {
-            	font-size: 140%;
-            	margin: 0;
-            	font-weight: 400;
-            }
-            
-            .heading header .contact .detail {
-            	margin: 0 1em 0 0;
-            }
-            
-            .profile {
-            	display: inline-block;
-            	margin: 0 1em 0 0;
-            }
-            
-            .profile strong,
-            .profile span {
-            	display: inline-block;
-            	margin: 0 1em 0 0;
-            }
-            /* section / line breaks */
-            section h2 {
-            	font-size: 140%;
-            	margin: 0 0 1em;
-            	text-transform: uppercase;
-            	color: #BC1B39;
-            	font-weight: 400;
-            }
-            
-            /* Experience items */
-            .item {
-            	margin: 0 0 1em;
-            	padding: 0 0 1em;
-            	/*border-bottom: 1px solid #F2EBEC;*/
-            }
-            
-            .item:last-child {
-            	border-bottom: none;
-            }
-            
-            
-            .item header h3 {
-            	margin: 0.2em 1em 0.2em 0;
-            	display: inline-block;
-            	font-weight: 600;
-            }
-            
-            .item header a {
-            	display: inline-block;
-            }
-            .item header h4 {
-            	margin: 0.15em 1em 0.35em 0;
-            }
-            .item .position {
-            	font-weight: 600;
-            	font-size: 100%;
-            	margin: 0.2em 1em 0.2em 0;
-            	color: #6B6B6B;
-            }
-            
-            .item .startDate,
-            .item .endDate {
-            	color: #6B6B6B;
-            }
-            
-            .item .highlights {
-            	list-style: square;
-            	text-align:justify;
-            	font-size: 90%;
-            }
-            
-            .item .summary {
-            	text-align:justify;
-            }
-            
-            /* skills */
-            #skills .item {
-            	margin: 0.5em 0;
-            	padding: 0 0 0.5em;
-            	font-size: 90%;
-            }
-            
-            #skills .item .name {
-            	font-weight: 600;
-            	display: inline-block;
-            	text-transform: uppercase;
-            	margin: 0 1em 0 0;
-            	width: 28%;
-            	vertical-align: top;
-            }
-            
-            #skills .item .keywords {
-            	display: inline-block;
-            	width: 65%;
-            	vertical-align: top;
-            }
-            
-            #skills .item .keywords .keyword {
-            	padding-bottom: 0.5em;
-            }
-            
-            /* education */
-            #education .item {
-            	/*display: inline-block;*/
-            	vertical-align: top;
-            	/*width: 49.5%;*/
-            	border-bottom: 0;
-            }
-            
-            /* education */
-            #languages .item {
-            	display: inline-block;
-            	vertical-align: top;
-            	width: 49.5%;
-            	border-bottom: 0;
-            }
-            
-            
-            /* education */
-            #nationality .item {
-            	display: inline-block;
-            	vertical-align: top;
-            	border-bottom: 0;
-            }
-            
-            .item .dates {
-            	float: right;
-            }
-            
-            @media print {
-            	body {
-            		font-size: 10pt;
-            		margin-bottom: 0;
-            	}
-            
-            	.nobreak {
-            		page-break-inside: avoid;
-            	}
-            
-            	#resume {
-            		margin-top: 0;
-            		margin-bottom: 0;
-            		padding-right: 0;
-            		padding-left: 0;
-            		max-width: 6.5in;
-            	}
-            
-            	.heading header h1 {
-            		margin-top: 0;
-            	}
-            
-            	@page {
-            		margin: 1in 1.5in;
-            	}
-            }
-        </style>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'
-        rel='stylesheet' type='text/css'>
-    </head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
     
-    <body>
-        <div id="resume">
-            <section class="heading nobreak">
-                <header>
-                    	<h1>Giuseppe Santoro</h1>
+    <title>Giuseppe Santoro | CV</title>
+</head>
+<body>
+    <div class="container">
+  <div class="header">
+  <h1 class="title">Giuseppe Santoro</h1>
+  <h2 class="role">Senior Data Engineer</h2>
+  
+  <input type="checkbox" id="switch" name="mode" class="toggle-dark"></input>
+  <label for="switch"><i id="moon" data-feather="moon" fill="var(--fg-color)"></i></label>
+  
+</div>
+  <div class="contacts-block">
+    <div class="sidebar">
+      
 
-                    <div class="contact">	<span class="detail">
-					<span><strong>Email</strong></span>
-	<a href="mailto:giuseppe.santoro@gmail.com">giuseppe.santoro@gmail.com</a>
+<section class="contact">
+    <div class="title">Contact</div>
+    
+    <div class="contact-item">
+        <i data-feather="at-sign"></i>
+        <a href="mailto:giuseppe.santoro@gmail.com">
+            giuseppe.santoro@gmail.com
+        </a>
+    </div>
+    
 
-                        </span>	<span class="detail">
-					<span><strong>Website</strong></span>
-	<a href="https://gsantoro.github.io">https://gsantoro.github.io</a>
+    
+    <div class="contact-item">
+        <i data-feather="phone"></i>
+        <a href="#">
+            07783542675
+        </a>
+    </div>
+    
 
-                        </span>
-                    </div>
-                </header>
-                <div class="profile">	<strong class="network">
-					LinkedIn
-				</strong>
-	<span class="username">
-					<a href="https://www.linkedin.com/in/santorogiuseppe/">santorogiuseppe</a>
-				</span>
+    
+    <div class="contact-item">
+        <i data-feather="github"></i>
+        <a href="https://github.com/gsantoro">
+            gsantoro
+        </a>
+    </div>
+    
 
-                </div>
-                <div class="profile">	<strong class="network">
-					GitHub
-				</strong>
-	<span class="username">
-					<a href="http://github.com/gsantoro">gsantoro</a>
-				</span>
+    
+    <div class="contact-item">
+        <i data-feather="linkedin"></i>
+        <a href="https://linkedin.com/in/santorogiuseppe">
+            santorogiuseppe
+        </a>
+    </div>
+    
 
-                </div>
-                <div class="profile">	<strong class="network">
-					Leetcode
-				</strong>
-	<span class="username">
-					<a href="https://leetcode.com/gsantoro/">gsantoro</a>
-				</span>
+    
 
-                </div>
-                <div class="profile">	<strong class="network">
-					Stackoverflow
-				</strong>
-	<span class="username">
-					<a href="https://stackoverflow.com/users/680740/pinosan">gsantoro</a>
-				</span>
+    
 
-                </div>
-            </section>
-            <section class="experience">
-                <!-- <div class="nobreak"> -->
-                	<h2>Experience</h2>
+    
+    <div class="contact-item">
+        <i data-feather="feather"></i>
+        <a href="https://www.mobygames.com/developer/giuseppe-santoro/credits/developerId,1021019/">
+            giuseppe-santoro
+        </a>
+    </div>
+    
 
-                <section class="item">
-                    <header>
-                        	<h3 class="name">PlayStation</h3>
+    
+    <div class="contact-item">
+        <!-- <i data-icon="simple-icons:leetcode"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+            class="iconify iconify--simple-icons" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+            data-icon="simple-icons:leetcode">
+            <path
+                d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"
+                fill="currentColor"></path>
+        </svg>
+        <a href="https://leetcode.com/gsantoro">
+            gsantoro
+        </a>
+    </div>
+    
+</section>
 
-                    </header>	<span class="position">
-				Big Data Engineer in the Game Analytics team at SIE Worldwide Studios
-			</span>
-	<span class="dates">
-				<span class="startDate">
-					Oct 2018
-				</span>
-	<span class="endDate">
-					&ndash; Present
-				</span>
-</span>
-                    <div class="summary">
-                        <p>Contributed to the data pipeline and internal microservices.</p>
-                    </div>
-                    <ul class="highlights">
-                        <li>Developed <strong>AWS Lambdas in Python and Golang</strong> to perform real-time
-                            transformations of events in <strong>AWS Kinesis</strong>.</li>
-                        <li>Developed a <strong>Spark job in Python running as an AWS Glue ETL job</strong> for
-                            batch transformations of data stored in <strong>AWS S3</strong>.</li>
-                        <li>Contributed to multiple <strong>RESTful microservices written in Python</strong>.</li>
-                        <li>Wrote an automation script in Python to integrate <strong>Okta and Grafana</strong>.</li>
-                        <li>Wrote various automation scripts in Python to interact with Amazon Web
-                            services like <strong>AWS S3, AWS Kinesis, AWS Glue and AWS Athena</strong>.</li>
-                        <li>Employed <strong>Docker, Terraform and Ansible</strong> to deploy and configure
-                            microservices and AWS Lambdas.</li>
-                        <li>User experience with other various Amazon Web Services like <strong>AWS Glue, AWS Athena, AWS S3, AWS EMR, AWS Kinesis and AWS Cloudwatch</strong>.</li>
-                    </ul>
-                </section>
-                <!-- -->
-                <!-- </div> -->
-                <!-- -->
-                <section class="item">
-                    <header>
-                        	<h3 class="name">Skimlinks</h3>
+      <!-- 
+ -->
+    </div>
 
-                    </header>	<span class="position">
-				Senior Software Engineer in the Platform Team
-			</span>
-	<span class="dates">
-				<span class="startDate">
-					Mar 2017
-				</span>
-	<span class="endDate">
-					&ndash; Aug 2018
-				</span>
-</span>
-                    <div class="summary">
-                        <p>Maintained and optimized every aspect of the big data pipeline, both by
-                            replacing parts of the legacy code, redesigning the Hadoop cluster and
-                            writing automation scripts.</p>
-                    </div>
-                    <ul class="highlights">
-                        <li>Reduced the running time of the daily pipeline by 75% (from 8 to 2 hours),
-                            by optimizing some slow <strong>Hive</strong> queries and replacing the legacy
-                            code with a <strong>Google Dataflow</strong> job written in Java for the
-                            ingestion of 120 million documents into <strong>ElasticSearch</strong>.</li>
-                        <li>Achieved 30% cost savings in the infrastructure expenses of my team by
-                            designing and configuring a new Hadoop cluster with the same processing
-                            power as the legacy cluster.</li>
-                        <li>Contributed to the migration of the data pipeline from Hive to <strong>Google Big Query</strong> by
-                            writing a <strong>Google Dataflow</strong> job for the data ingestion, by
-                            deploying an Airflow cluster running on <strong>Kubernetes</strong> and by
-                            writing <strong>Airflow</strong> jobs for the pipeline automation.</li>
-                        <li>Improved the data pipeline by writing SQL for Hive queries and Java code
-                            for <strong>Hive UDFs and Hive SerDes</strong>.</li>
-                        <li>Contributed to a RESTful API written in Python that was acting as a proxy
-                            between ElasticSearch and a front-end dashboard.</li>
-                        <li>Developed <strong>Python</strong> scripts both to collect and display pipeline
-                            statistics into a Grafana/InfluxDB dashboard and to deploy and maintain
-                            the Hadoop cluster.</li>
-                    </ul>
-                </section>
-                <!-- -->
-                <section class="item">
-                    <header>
-                        	<h3 class="name">Benevolent.AI</h3>
+    <div class="profile-block">
+      
 
-                    </header>	<span class="position">
-				Big Data Engineer
-			</span>
-	<span class="dates">
-				<span class="startDate">
-					Jul 2015
-				</span>
-	<span class="endDate">
-					&ndash; Feb 2017
-				</span>
-</span>
-                    <div class="summary">
-                        <p>Contributed to the optimization and automation of the data pipeline.</p>
-                    </div>
-                    <ul class="highlights">
-                        <li>Contributed to the migration of the data pipeline from <strong>Map/Reduce</strong> jobs
-                            written in Java running on a bare-metal Hadoop cluster into <strong>Spark</strong> jobs
-                            written in Scala running on <strong>Amazon EMR</strong>.</li>
-                        <li>Reduced by ~8x (from 24 to 3 hours) the ingestion time of 40 million scientific
-                            publications into <strong>ElasticSearch</strong> by writing a Spark job in <strong>Scala</strong>.</li>
-                        <li>Deployed, configured and maintained multiple <strong>Hadoop, ElasticSearch and Cassandra</strong> clusters
-                            by using a combination of <strong>Ansible</strong> and Python scripts both
-                            on-premise and on <strong>Amazon AWS cloud</strong>.</li>
-                        <li>Automated the data pipeline with multiple <strong>Apache Airflow</strong> jobs
-                            written in <strong>Python</strong>.</li>
-                        <li>Improved the monitoring and alerting of the data pipeline by employing
-                            Python and Bash scripts.</li>
-                        <li>Extensively used <strong>Docker</strong> containers both for local development
-                            and for production environments on <strong>Apache Mesos</strong> and Apache
-                            Marathon.</li>
-                    </ul>
-                </section>
-                <!-- -->
-                <section class="item">
-                    <header>
-                        	<h3 class="name">Big Data Partnership</h3>
+<section class="career-profile">
+    <h2 class="title">Career Profile</h2>
+    <div class="details">Senior Data Engineer with 8 years of experience in Big Data including training and consultancy. 
+Highlights include developing and supporting data pipelines at scale in various industries. Key interest in Distributed Systems and Linux Operating Systems.
+</div>
+</section>
 
-                    </header>	<span class="position">
-				Senior Big Data Engineer
-			</span>
-	<span class="dates">
-				<span class="startDate">
-					Nov 2013
-				</span>
-	<span class="endDate">
-					&ndash; Jul 2015
-				</span>
-</span>
-                    <div class="summary">
-                        <p>Various roles including Big Data consultant, Hadoop trainer and Big Data
-                            Engineer.</p>
-                    </div>
-                    <ul class="highlights">
-                        <li><strong>Lead Engineer</strong> in a 3 people and 3 months greenfield project
-                            in the field of image processing.</li>
-                        <li>Delivered various Hadoop training courses both on client site and on multiple
-                            occasions as part of the <strong>European Hadoop Summit</strong> in partnership
-                            with Hortonworks.</li>
-                        <li>Successfully installed, configured and optimized multiple <strong>Hadoop clusters</strong> for
-                            a variety of clients.</li>
-                        <li>Contributed to the development of the data pipeline with technologies
-                            including <strong>HBase, Apache Pig and Hadoop</strong>.</li>
-                        <li><strong>Hortonworks certifications</strong> as Hadoop Administrator and
-                            Hadoop Developer.</li>
-                    </ul>
-                </section>
-                <!-- -->
-                <section class="item">
-                    <header>
-                        	<h3 class="name">VisualDNA</h3>
+    </div>
+  </div>
+  <div class="main-block">
+    
 
-                    </header>	<span class="position">
-				Software Engineer in the Core Team
-			</span>
-	<span class="dates">
-				<span class="startDate">
-					Jan 2013
-				</span>
-	<span class="endDate">
-					&ndash; Oct 2013
-				</span>
-</span>
-                    <div class="summary">
-                        <p>Contributed to the development of web applications and the data pipeline.</p>
-                    </div>
-                    <ul class="highlights">
-                        <li>Developed multiple <strong>RESTful APIs in Java</strong> in order to integrate
-                            with data sources like FTP servers and NoSQL databases.</li>
-                        <li>Improved the front-end functionality of web applications.</li>
-                        <li>Acquired some experience with Big Data tools like <strong>Kafka, Hive, Pig and Zookeeper</strong>.</li>
-                    </ul>
-                </section>
-                <!-- -->
-            </section>
-            <section id="education">
-                <div class="nobreak">
-                    	<h2>Education</h2>
-
-                    <section class="item nobreak">
-                        <header>
-                            	<h3 class="name">University of Catania, Italy</h3>
-
-                        </header>	<span class="dates">
-				<span class="startDate">
-					Jan 2006
-				</span>
-	<span class="endDate">
-					&ndash; Jan 2012
-				</span>
-</span>
-                        <div class="qualification">	<span class="studyType">
-					Master&#x27;s degree
-				</span>
-	<span class="area">
-					&ndash; Software Engineering
-				</span>
-	<span class="gpa">
-					GPA: 4.0 (110/110 cum laude)
-				</span>
-
-                        </div>
-                    </section>
-                </div>
-                <section class="item nobreak">
-                    <header>
-                        	<h3 class="name">University of Palermo, Italy</h3>
-
-                    </header>	<span class="dates">
-				<span class="startDate">
-					Jan 2002
-				</span>
-	<span class="endDate">
-					&ndash; Jan 2006
-				</span>
-</span>
-                    <div class="qualification">	<span class="studyType">
-					Bachelor&#x27;s degree
-				</span>
-	<span class="area">
-					&ndash; Software Engineering
-				</span>
-	<span class="gpa">
-					GPA: 4.0 (110/110 cum laude)
-				</span>
-
-                    </div>
-                </section>
-            </section>
-            <section id="languages" class="nobreak">
-                	<h2>Languages</h2>
-
-                <div class="item">	<span class="language">
-				Italian
-			</span>
-	<span class="fluency">
-				<em>Native speaker</em>
-			</span>
-
-                </div>
-                <div class="item">	<span class="language">
-				English
-			</span>
-	<span class="fluency">
-				<em>C1</em>
-			</span>
-
-                </div>
-            </section>
+<section class="experience">
+    <h2 class="title">Experience</h2>
+    
+    <div class="experience-item">
+        <div class="role">
+            Big Data Engineer
         </div>
-    </body>
+        <div class="company">
+            Sony Interactive Entertainment (Industry: Gaming)
+            <span class="time">October 2018 - August 2021</span>
+        </div>
+        
+        <div class="team">
+            Game Analytics Team at World Wide Studios
+        </div>
+        
 
+        <ul>
+            
+            <li class="details">Wrote a standalone application to <strong>compress, deduplicate and re-partition</strong> historical and daily game analytics data. This made querying months worth of data in 10s of seconds possible. Previously, it would have taken hours to query a single month and it would have run out of memory for querying longer periods (<strong>Golang, AWS S3, AWS Athena, AWS Glue</strong>).</li>
+            
+            <li class="details">Wrote a Lambda to <strong>modify game analytics events in real-time</strong>. This lambda replaced IDs in the events according to custom rules per game and per event type stored in AWS S3. Part of this project included writing an in-memory cache for the S3 configs to reduce the processing time (<strong>Python, AWS Kinesis, AWS Lambda</strong>).</li>
+            
+            <li class="details">Wrote a Lambda to offload data from the real-time pipeline to the data warehouse (<strong>Golang, AWS Kinesis, AWS Kinesis Firehose, AWS S3</strong>)</li>
+            
+            <li class="details">Contributed to the successful launch and ongoing support of <strong>10+ Playstation first-party games</strong> from World Wide Studios by providing capacity estimations, cost optimizations, modifying configs, fixing bugs and being on call (<strong>AWS EMR, AWS Lambda, AWS Kinesis, Golang, Python, Terraform, Jenkins</strong>)</li>
+            
+            <li class="details">Contributed to a major <strong>refactoring of the data pipeline</strong> (<strong>Golang, Python, AWS Kinesis, EMR, AWS Lambda, Terraform</strong>)</li>
+            
+            <li class="details">Reduced the time taken by Engineers to manually create Grafana users, by writing an automation script that synchronized Okta users with Grafana users (<strong>Python</strong>)</li>
+            
+            <li class="details">Wrote a script that would allow Engineers from a Studio to <strong>search, download and transcode videos</strong> according to different criteria (<strong>Python</strong>).</li>
+            
+            <li class="details">Maintained and improved <strong>10+ internal microservices, 20+ EMR jobs, 5+ AWS Lambdas</strong> to support the data pipeline (Python, Golang, Terraform, Ansible)</li>
+            
+        </ul>
+    </div>
+    
+    <div class="experience-item">
+        <div class="role">
+            Senior Software Engineer
+        </div>
+        <div class="company">
+            Skimlinks (Industry: Advertising)
+            <span class="time">March 2017 - August 2018</span>
+        </div>
+        
+        <div class="team">
+            Platform team
+        </div>
+        
+
+        <ul>
+            
+            <li class="details">Reduced the running time of the daily pipeline by ~4x (from 8 to 2 hours), by optimizing some Hive queries and replacing the legacy code with a <strong>Google Dataflow job written in Java</strong> for the ingestion of 120 million documents into ElasticSearch.</li>
+            
+            <li class="details">Achieved <strong>30% cost savings in the infrastructure expenses</strong> of my team by replacing the legacy Hadoop cluster with a new setup with the same processing power plus Kerberos Security</li>
+            
+            <li class="details">Wrote a <strong>Google Dataflow job in Java</strong> as part of the migration of the data pipeline from Hive on-premise to Google BigQuery</li>
+            
+            <li class="details">Automated the scheduling of the data pipeline by creating, configuring and supporting an <strong>Airflow cluster running on Kubernetes on Google cloud</strong> and by writing various <strong>Airflow jobs in Python</strong></li>
+            
+            <li class="details">Improved various parts of the data pipeline (<strong>SQL for Hive queries, Java for Hive UDFs and Hive SerDes</strong>)</li>
+            
+            <li class="details">Developed scripts to collect and display data pipeline statistics into <strong>InfluxDB and Grafana</strong> (<strong>Python</strong>)</li>
+            
+        </ul>
+    </div>
+    
+    <div class="experience-item">
+        <div class="role">
+            Big Data Engineer
+        </div>
+        <div class="company">
+            BenevolentAI (Industry: Pharmaceutical research)
+            <span class="time">July 2015 - February 2017</span>
+        </div>
+        
+        <div class="team">
+            Platform team
+        </div>
+        
+
+        <ul>
+            
+            <li class="details">Reduced the ingestion time of 40 million scientific publications into <strong>ElasticSearch</strong> by ~8x (from 24 to 3 hours) by rewriting one of the steps of the data pipeline (<strong>Spark, Hadoop cluster on AWS</strong>).</li>
+            
+            <li class="details">Deployed, configured and maintained a variety of <strong>Hadoop, ElasticSearch and Cassandra</strong> clusters either bare-metal on-premise or on cloud (<strong>Python, Ansible, Amazon AWS</strong>)</li>
+            
+            <li class="details">Contributed to the migration of the batch data pipeline from a bare-metal Hadoop cluster to an Amazon EMR cluster by rewriting a Map/Reduce job that was written in Java into a <strong>Spark job written in Scala</strong></li>
+            
+            <li class="details">Automated the scheduling of the data pipeline by writing multiple <strong>Airflow</strong> jobs (<strong>Python</strong>)</li>
+            
+            <li class="details">Improved the data pipeline alerting capabilities (<strong>Python and Bash scripting</strong>)</li>
+            
+            <li class="details">Contributed and maintained various apps running on <strong>Mesos and Marathon</strong> as Docker containers</li>
+            
+        </ul>
+    </div>
+    
+    <div class="experience-item">
+        <div class="role">
+            Senior Big Data Engineer
+        </div>
+        <div class="company">
+            Big Data Partnership (Industry: Software) acquired by Teradata in 2016
+            <span class="time">November 2013 - July 2015</span>
+        </div>
+        
+
+        <ul>
+            
+            <li class="details">For 2 consecutive years, I delivered <strong>the official 5 days training course on Hadoop</strong> as part of the Hadoop Summit in partnership with Hortonworks</li>
+            
+            <li class="details">Delivered <strong>5+ training courses (duration 3-5 days) on Hadoop (either as Admin or Developer)</strong> at client offices across Europe</li>
+            
+            <li class="details">Installed, configured and optimized <strong>3 Hadoop clusters</strong> on bare-metal machines for different clients</li>
+            
+            <li class="details">Delivered <strong>5+ consultancy sessions</strong> on Hadoop and Big Data for various clients</li>
+            
+            <li class="details">Obtained <strong>3 Hortonworks certifications on Hadoop</strong> as Administrator (with grade 83.33/100), Developer (with grade 92/100) and Java Developer (with grade 93/100)</li>
+            
+            <li class="details"><strong>Lead Engineer</strong> in a team of 3 Engineers for a 4-month greenfield project for a client</li>
+            
+            <li class="details">Contributed to the development of the internal batch data pipeline (<strong>HBase, Pig, Hadoop</strong>)</li>
+            
+            <li class="details">Attended various training courses including <strong>Spark by Databricks, Administrator Training with Cassandra by Datastax, Developer Training with Cassandra by Datastax </strong></li>
+            
+        </ul>
+    </div>
+    
+    <div class="experience-item">
+        <div class="role">
+            Software Engineer
+        </div>
+        <div class="company">
+            VisualDNA (Industry: Advertising)
+            <span class="time">January 2013 - October 2013</span>
+        </div>
+        
+        <div class="team">
+            Integrations Team
+        </div>
+        
+
+        <ul>
+            
+            <li class="details">Developed 5+ integrations with external data providers via FTP protocol (<strong>Java</strong>)</li>
+            
+            <li class="details">Developed an internal RESTful API to serve data from a NoSQL database (<strong>Java, AWS SimpleDB</strong>)</li>
+            
+            <li class="details">Wrote various parts of the internal data pipeline (<strong>SQL, Hive, Pig</strong>)</li>
+            
+            <li class="details">Wrote a client for <strong>Kafka</strong> (<strong>Java</strong>)</li>
+            
+        </ul>
+    </div>
+    
+</section>
+
+
+    
+
+<section class="education">
+    <h2 class="title">Education</h2>
+    
+    <div class="education-item">
+        <div class="degree">
+            MSc in Computer Engineering
+        </div>
+        <div class="university">
+            University of Catania, Italy
+            <span class="time">September 2006 - July 2012</span>
+        </div>
+        <div class="grade">110/110 cum laude (with honours)</div>
+    </div>
+    
+    <div class="education-item">
+        <div class="degree">
+            BSc in Computer Engineering
+        </div>
+        <div class="university">
+            University of Palermo, Italy
+            <span class="time">September 2002 - July 2006</span>
+        </div>
+        <div class="grade">110/110 cum laude (with honours)</div>
+    </div>
+    
+</section>
+
+    
+
+<section class="skills">
+    <h2 class="title">Skills</h2>
+    
+    <div class="skill-item">
+        <span class="category">Backend</span>:
+        <span class="details">Python, Golang, Java, SQL</span>
+    </div>
+    
+    <div class="skill-item">
+        <span class="category">Amazon AWS</span>:
+        <span class="details">Lambda, Kinesis, Glue, Athena, EMR, S3</span>
+    </div>
+    
+    <div class="skill-item">
+        <span class="category">Google Cloud Platform</span>:
+        <span class="details">Dataflow, BigQuery</span>
+    </div>
+    
+    <div class="skill-item">
+        <span class="category">Distributed Systems</span>:
+        <span class="details">Spark, Hadoop, Hive, Pig, ElasticSearch</span>
+    </div>
+    
+    <div class="skill-item">
+        <span class="category">DevOps</span>:
+        <span class="details">Docker, Terraform, Ansible, Fabric, Bash scripting</span>
+    </div>
+    
+</section>
+
+    
+
+<section class="languages">
+    <div class="title">Languages</div>
+    
+        <div class="idiom">Italian (Native)</div>
+    
+        <div class="idiom">English (Fluent)</div>
+    
+</section>
+
+    <!-- 
+ -->
+    <!-- 
+ -->
+    <!-- 
+ -->
+  </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+  <script src="/assets/javascript/toggleDark.js"></script>
+
+<script>
+  feather.replace()
+</script>
 </html>
